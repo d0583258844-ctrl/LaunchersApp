@@ -1,3 +1,18 @@
-.home{
-color: black;
+.block {
+    margin-top: 1rem;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.para {
+    padding: 5px;
+    margin-left: 2px;
+}
+
+.card {
+    background-color: rgb(144, 202, 202);
+    border: 1px solid black;
 }

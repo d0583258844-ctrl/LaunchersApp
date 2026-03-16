@@ -1,0 +1,30 @@
+.navbar {
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: rgb(151, 192, 222);
+}
+
+.link {
+    text-decoration: none;
+    padding: 8px;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.link:hover {
+    background-color: rgb(197, 195, 192);
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+.title {
+    display: flex;
+    justify-self: center;
+    padding-left: 20px;
+    font-size: xx-large;
+}

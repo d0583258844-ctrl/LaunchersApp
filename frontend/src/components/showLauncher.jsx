@@ -1,7 +1,6 @@
 function showLauncher() {
   return (
     <div>
-      
     </div>
   )
 }
