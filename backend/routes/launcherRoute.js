@@ -7,7 +7,7 @@ import { auth } from "../utils/middleware.js"
 
 const router = express.Router()
 
-router.get("/", auth(["administrator user", "air force user", "intelligence force user"]), getAllRockets)
+router.get("/", getAllRockets)
 
 router.get("/:id", getById)
 
