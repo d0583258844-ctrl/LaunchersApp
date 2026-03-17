@@ -4,6 +4,7 @@ import cors from "cors"
 import conectionToDb from "./db/connectToDB.js"
 import launcherRoutes from "./routes/launcherRoute.js"
 import authRoutes from "./routes/authRoute.js"
+import cookieParser from "cookie-parser"
 
 dotenv.config()
 const port = process.env.PORT
@@ -11,6 +12,8 @@ const port = process.env.PORT
 const app = express()
 
 app.use(express.json())
+
+app.use(cookieParser())
 
 app.use(cors())
 
