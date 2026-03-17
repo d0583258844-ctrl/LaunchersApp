@@ -1,0 +1,18 @@
+.allFields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    min-height: 50vh;
+}
+
+.labelinput {
+    padding: 0.5vw;
+    display: flex;
+}
+
+.submit {
+    display: flex;
+    margin-top: 10px;
+    justify-self: center;
+}
