@@ -14,11 +14,13 @@ const userSchema = new mongoose.Schema({
     },
     user_type: {
         type: String,
-        required: true
+        required: true,
+        enum: ["administrator user", "air force user", "intelligence force user"]
     },
     last_login: {
-        type: String | "",
-        required: false
+        type: String,
+        default: Date,
+        required: false,
     }
 })
 

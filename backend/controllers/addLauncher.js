@@ -9,6 +9,6 @@ export const addNewRocket = async (req, res) => {
         const newRocket = await Rocket.create({ name, rocketType, latitude, longitude, city })
         res.status(200).json({ message: "rocket add seccessfuly", rocketAdd: newRocket })
     } catch (error) {
-        res.status(500).json({ message: "Faild", error: error.message })
+        res.status(500).json({ message: "Failed", error: error.message })
     }
 }
