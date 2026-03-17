@@ -9,13 +9,13 @@ export const createUser = async (req, res) => {
             return res.status(400).send("One field or more is missing.")
         }
 
-        // const userExsits = await User.findOne({ user_type: user_type })
-        // if (userExsits) {
-        //     return res.status(401).json({ message: `Error: User with user type: ${user_type} alreday exsits` })
-        // }
+        const userExsits = await User.findOne({ user_type: user_type })
+        if (userExsits) {
+            res.send(`Error: User with user type: ${user_type} alreday exsits`)
 
-        const newUser = await User.create({ username, password, email, user_type, last_login })
-        res.status(201).json({ message: "User created seccefully", user: newUser })
+            const newUser = await User.create({ username, password, email, user_type, last_login })
+            res.status(201).json({ message: "User created seccefully", user: newUser })
+        }
     } catch (error) {
         res.status(500).json({ message: "Failed", error: error })
     }
