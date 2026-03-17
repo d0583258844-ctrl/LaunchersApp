@@ -9,6 +9,9 @@ function Navbar() {
         <Link className="link" to={"/"}>Home Page</Link>
         <Link className="link" to={"/launcher/add"}>Launcher Add</Link>
         <Link className="link" to={"/launcher/details"}>Launcher Details</Link>
+        <Link className="link" to={"/auth/register"}>Register </Link>
+        <Link className="link" to={"/auth/login"}>Login </Link>
+        <Link className="link" to={"/auth/logout"}>Logout </Link>
       </div>
     </div>
   )

@@ -4,6 +4,9 @@ import HomePage from "./pages/HomePage"
 import AddLauncherPage from "./pages/AddLauncherPage"
 import LauncherDetailsPage from "./pages/LauncherDetailsPage"
 import Navbar from './components/Navbar'
+import RegisterPage from './pages/RegisterPage'
+import LoginPage from './pages/LoginPage'
+import Logout from './components/Logout'
 
 function App() {
 
@@ -14,6 +17,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/luncher/add" element={<AddLauncherPage />} />
         <Route path="/launcher/details" element={<LauncherDetailsPage />} />
+        <Route path="/auth/register" element={< RegisterPage />} />
+        <Route path="/auth/login" element={<LoginPage />} />
+        <Route path="/auth/logout" element={<Logout />} />
       </Routes>
     </>
   )
