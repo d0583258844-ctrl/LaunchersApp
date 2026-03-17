@@ -1,8 +1,10 @@
 import express from "express"
-import { createUser, deleteUser, login, updateUser } from "../controllers/authControllers.js"
+import { createUser, deleteUser, getCurrentUser, login, updateUser } from "../controllers/authControllers.js"
 
 
 const router = express.Router()
+
+router.get("/getUser", getCurrentUser)
 
 router.post("/register/create", createUser)
 
